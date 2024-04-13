@@ -9,16 +9,27 @@
     <meta name="description" content="TRANSFORMING GRAFFITI INTO POSITIVE MESSAGES" />
    
     <style>
-         footer {
-            text-align: center;
-            position: sticky;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
+        footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p, footer a, footer span {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p, footer a {
+        margin-right: 10px;
+    }
+}
+
         :root {
             --ffsd: 0px;
             --1vw: calc((100vw - var(--sbw, 0px)) / 100);
@@ -3314,8 +3325,12 @@
     </div>
    
 
-               <footer>  <p>By using GraffAr, you acknowledge and agree to abide by these terms and conditions</p><a href= "term.html" >terms and conditions</a>
-                (apk file is Prototype)</footer>
+    <footer>
+        <p>By using GraffAr, you acknowledge and agree to abide by these terms and conditions</p>
+        <a href="term.html">terms and conditions</a>
+        <span>(apk file is Prototype)</span>
+    </footer>
+    
 </body>
 
 </html>
